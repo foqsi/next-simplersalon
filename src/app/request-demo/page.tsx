@@ -41,7 +41,7 @@ export default function RequestDemoPage() {
             transition={{ duration: 0.4 }}
             className="text-center text-blue-400 font-semibold text-xl bg-white/10 backdrop-blur-md p-6 rounded-xl max-w-lg mx-auto"
           >
-            Thank you! We'll reach out to schedule your demo soon.
+            🎉 Thank you! We&apos;ll reach out to schedule your demo soon.
           </motion.div>
         ) : (
           <motion.form
