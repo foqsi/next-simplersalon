@@ -41,7 +41,7 @@ export default function RequestDemoPage() {
             transition={{ duration: 0.4 }}
             className="text-center text-blue-400 font-semibold text-xl bg-white/10 backdrop-blur-md p-6 rounded-xl max-w-lg mx-auto"
           >
-            🎉 Thank you! We'll reach out to schedule your demo soon.
+            Thank you! We'll reach out to schedule your demo soon.
           </motion.div>
         ) : (
           <motion.form
@@ -99,7 +99,7 @@ export default function RequestDemoPage() {
               type="submit"
               className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition font-semibold"
             >
-              Request Demo
+              Send Request
             </button>
           </motion.form>
         )}
