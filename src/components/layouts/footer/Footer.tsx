@@ -12,7 +12,7 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold mb-2">Simpler Salon</h2>
           <p className="text-gray-400 mb-4">
-            Stop paying monthly for your small business' website. Pay once, own it forever, and update whenever you want.
+            Stop paying monthly for your small business&apos; website. Pay once, own it forever, and update whenever you want.
           </p>
         </div>
 

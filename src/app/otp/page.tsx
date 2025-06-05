@@ -21,7 +21,7 @@ export default function OneTimePurchaseContact() {
       <p className='text-sm text-center mb-8'>Fields marked with <span className='text-red-500'>*</span> are required.</p>
       {submitted ? (
         <div className="max-w-xl mx-auto text-center text-blue-400 font-semibold text-xl bg-white/10 backdrop-blur-md p-6 rounded-xl">
-          🎉 Thank you! We'll contact you shortly.
+          🎉 Thank you! We&apos;ll contact you shortly.
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6 bg-white/5 backdrop-blur-lg p-6 rounded-xl shadow-xl">
