@@ -2,7 +2,7 @@
 
 export default function Features() {
   return (
-    <section className="bg-gray-950 text-white py-20 px-6">
+    <section className="border-t border-gray-900 bg-gradient-to-br from-gray-800 to-gray-950 text-white py-20 px-6 w-full">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold animate-slide-up">Why Choose Simpler Salon?</h2>
         <p className="text-gray-300 mt-4 max-w-2xl mx-auto animate-fade-in">

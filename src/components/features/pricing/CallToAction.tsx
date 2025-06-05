@@ -7,7 +7,7 @@ export default function CTA() {
       <p className="mb-6 text-lg">No subscriptions. Just you and your brand — forever.</p>
       <a
         href="/request-demo"
-        className="bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-100 transition"
+        className="bg-white text-blue-600 px-6 py-3 rounded hover:bg-gray-300 transition"
       >
         Claim Your Spot
       </a>

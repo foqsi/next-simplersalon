@@ -1,22 +1,16 @@
 import Header from '@/components/features/pricing/Header';
 import PricingCard from '@/components/features/pricing/PricingCard';
-import Comparison from '@/components/features/pricing/Comparison';
-import FAQ from '@/components/features/pricing/FAQ';
 import CTA from '@/components/features/pricing/CallToAction';
-import { FadeIn, FadeInDown } from '@/components/animations/';
+import { FadeInDown } from '@/components/animations/';
+import ParticlesBackground from '@/components/ParticlesBackground';
 
 export default function PricingPage() {
   return (
-    <main>
-      <FadeIn>
-        <Header />
-      </FadeIn>
-      <FadeIn delay={0.3}>
-        <PricingCard />
-      </FadeIn>
-      <Comparison />
-      <FAQ />
+    <main className='relative z-0 bg-gray-800'>
+      <ParticlesBackground />
       <FadeInDown>
+        <Header />
+        <PricingCard />
         <CTA />
       </FadeInDown>
     </main>

@@ -4,9 +4,9 @@ import { FadeIn } from '@/components/animations/';
 
 export default function Comparison() {
   return (
-    <section className="relative z-0 bg-gray-900 text-white py-16 px-4">
+    <section className="relative z-0 bg-gradient-to-r from-gray-900 to-gray-950 text-white py-16 px-4">
       <div className="max-w-5xl mx-auto">
-        <h3 className="text-2xl font-bold mb-8 text-center">Why Choose Simpler?</h3>
+        <h3 className="text-2xl font-bold mb-8 text-center">Compared to Others</h3>
         <div className="grid md:grid-cols-2 gap-8">
           <FadeIn>
             <div className="border rounded p-6 bg-gray-800 border-blue-500">
