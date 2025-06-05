@@ -21,13 +21,15 @@ export default function Features() {
           { title: 'Fast & Secure', desc: 'Your site is optimized for speed and security.' },
           { title: 'Custom Branding', desc: 'Tailored to match your business and style.' },
         ].map((f, i) => (
-          <div
-            key={i}
-            className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow hover:shadow-lg transition"
-          >
-            <h3 className="text-xl font-semibold mb-2 text-white">{f.title}</h3>
-            <p className="text-gray-300 text-sm">{f.desc}</p>
-          </div>
+          <FadeIn delay={0.2} key={i}>
+            <div
+              key={i}
+              className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow hover:shadow-lg transition"
+            >
+              <h3 className="text-xl font-semibold mb-2 text-white">{f.title}</h3>
+              <p className="text-gray-300 text-sm">{f.desc}</p>
+            </div>
+          </FadeIn>
         ))}
       </div>
     </section>
