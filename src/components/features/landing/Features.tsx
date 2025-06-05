@@ -1,5 +1,7 @@
 'use client';
 
+import { FadeIn } from '@/components/animations/';
+
 export default function Features() {
   return (
     <section className="border-t border-gray-900 bg-gradient-to-br from-gray-800 to-gray-950 text-white py-20 px-6 w-full">
@@ -13,9 +15,9 @@ export default function Features() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {[
           { title: 'Full Ownership', desc: 'You pay once. No monthly subscriptions.' },
-          { title: 'Easy Editing', desc: 'Update your content anytime without a developer.' },
+          { title: 'Easy Editing', desc: 'Update your content without code.' },
           { title: 'Responsive Design', desc: 'Looks great on phones, tablets, and desktops.' },
-          { title: 'Gallery & Services', desc: 'Show off your work and update your services easily.' },
+          { title: 'Gallery & Services', desc: 'Show off your work and update your services.' },
           { title: 'Fast & Secure', desc: 'Your site is optimized for speed and security.' },
           { title: 'Custom Branding', desc: 'Tailored to match your business and style.' },
         ].map((f, i) => (

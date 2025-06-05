@@ -14,17 +14,17 @@ export default function LandingPage() {
       <FadeIn>
         <Hero />
       </FadeIn>
-      <FadeIn>
-        <div className='hidden md:flex'>
-          <Features />
-        </div>
-        <div className='md:hidden'>
-          <MobileFeatures />
-        </div>
-        <OtherFeatures />
-        <Comparison />
-        <FAQ />
-      </FadeIn>
+
+      <div className='hidden md:flex'>
+        <Features />
+      </div>
+      <div className='md:hidden'>
+        <MobileFeatures />
+      </div>
+      <OtherFeatures />
+      <Comparison />
+      <FAQ />
+
       <FadeIn delay={0.3}>
         <CTA />
       </FadeIn>

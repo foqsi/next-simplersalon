@@ -23,7 +23,7 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex justify-center animate-slide-up">
           <a
-            href="/request-demo"
+            href="/pricing"
             className="bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-600 transition transform hover:scale-105"
           >
             Get Started Today

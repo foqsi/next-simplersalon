@@ -15,7 +15,7 @@ export default function RequestDemoFormSection({ form, onChange, onSubmit }: Pro
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-start">
       <FadeIn delay={0.2}>
         <div className="bg-white/5 backdrop-blur-lg rounded-xl shadow-xl px-6 py-8 h-full flex flex-col">
-          <div className="flex md:justify-end mb-4">
+          <div className="flex mb-4">
             <span className="bg-blue-500 text-white text-sm px-3 py-1 rounded-full">
               What&apos;s Included
             </span>
@@ -26,7 +26,6 @@ export default function RequestDemoFormSection({ form, onChange, onSubmit }: Pro
             <li>Edit content on pages</li>
             <li>Upload/delete images to a gallery</li>
             <li>Add, remove, edit content on services page</li>
-            <li>Mobile-friendly and SEO-ready</li>
           </ul>
         </div>
       </FadeIn>
