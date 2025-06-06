@@ -9,7 +9,7 @@ export default function CallToAction() {
       </p>
       <a
         href="/request-demo"
-        className="bg-white text-blue-700 px-6 py-3 rounded font-bold shadow-lg hover:bg-gray-100 transition transform hover:scale-105"
+        className="bg-white text-blue-700 px-6 py-3 rounded font-bold shadow-lg hover:bg-gray-300 transition transform hover:scale-105"
       >
         Book Your Demo
       </a>

@@ -1,7 +1,7 @@
 'use client';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { AddtlLinks, NavLinks, LegalLinks } from '@/components/NavLinks';
+import { AddtlLinks, QuickLinks, LegalLinks } from '@/components/NavLinks';
 
 // TODO: Update Quick Links
 
@@ -10,24 +10,24 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-gray-800 to-gray-700 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <h2 className="text-2xl font-bold mb-2">Simpler Salon</h2>
-          <p className="text-gray-400 mb-4">
+          <h2 className="text-2xl font-bold mb-2 text-gradient bg-gradient-to-l from-blue-500 via-blue-500 to-white bg-clip-text text-transparent">Simpler Salon</h2>
+          <p className="text-gray-300 mb-4">
             Stop paying monthly for your small business&apos; website. Pay once, own it forever, and update whenever you want.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-xl font-semibold mb-4 text-blue-300">Quick Links</h3>
           <ul className="space-y-2 text-gray-300 text-sm flex flex-col">
-            <NavLinks />
+            <QuickLinks />
             <AddtlLinks />
           </ul>
         </div>
 
         {/* Legal */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Legal</h3>
+          <h3 className="text-xl font-semibold mb-4 text-blue-300">Legal</h3>
           <ul className='space-y-2 text-gray-300 text-sm flex flex-col'>
             <LegalLinks />
           </ul>

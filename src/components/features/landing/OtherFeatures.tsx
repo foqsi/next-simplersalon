@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FadeIn } from '@/components/animations';
+import GlowCard from '@/components/GlowCard';
 
 const features = [
   {
@@ -39,8 +40,8 @@ export default function OtherFeatures() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">More Than a Website</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gradient bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">More Than a Website</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto mt-4">
               When you work with Simpler Salon, you’re getting a site — plus hosting, database help, and direct developer support.
             </p>
           </FadeIn>
@@ -49,29 +50,31 @@ export default function OtherFeatures() {
         <div className="space-y-16">
           {features.map((group, i) => (
             <FadeIn key={i} delay={i * 0.2}>
-              <div className="grid md:grid-cols-2 gap-8 items-center bg-gray-800 border border-gray-700 rounded-xl p-6 shadow">
-                {/* Text Content */}
-                <div>
-                  <h3 className="text-xl font-semibold text-blue-400 mb-4">{group.title}</h3>
-                  <ul className="space-y-2 text-sm text-gray-300 list-disc list-inside">
-                    {group.items.map((item, j) => (
-                      <li key={j}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Optional Image */}
-                {group.image && (
-                  <div className="relative w-full h-48 md:h-64">
-                    <Image
-                      src={group.image}
-                      alt={group.title}
-                      fill
-                      className="object-contain rounded-md"
-                    />
+              <GlowCard>
+                <div className="grid md:grid-cols-2 gap-8 items-center rounded-xl">
+                  {/* Text Content */}
+                  <div>
+                    <h3 className="text-xl font-bold text-blue-500 mb-4">{group.title}</h3>
+                    <ul className="space-y-2 text-sm text-gray-300 list-disc list-inside">
+                      {group.items.map((item, j) => (
+                        <li key={j}>{item}</li>
+                      ))}
+                    </ul>
                   </div>
-                )}
-              </div>
+
+                  {/* Optional Image */}
+                  {group.image && (
+                    <div className="relative w-full h-48 md:h-64">
+                      <Image
+                        src={group.image}
+                        alt={group.title}
+                        fill
+                        className="object-contain rounded-md"
+                      />
+                    </div>
+                  )}
+                </div>
+              </GlowCard>
             </FadeIn>
           ))}
         </div>

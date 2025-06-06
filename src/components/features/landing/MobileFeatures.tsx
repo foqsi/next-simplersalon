@@ -1,6 +1,7 @@
 'use client';
 
 import { FadeInLeft } from '@/components/animations/';
+import GlowCard from '@/components/GlowCard';
 
 export default function Features() {
   return (
@@ -22,10 +23,10 @@ export default function Features() {
           { title: 'Custom Branding', desc: 'Tailored to match your business and style.' },
         ].map((f, i) => (
           <FadeInLeft key={i}>
-            <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-2 text-white">{f.title}</h3>
-              <p className="text-gray-300 text-sm">{f.desc}</p>
-            </div>
+            <GlowCard className="mb-6  rounded-lg">
+              <h3 className="text-xl font-semibold mb-2 text-blue-500">{f.title}</h3>
+              <p className="text-white text-sm">{f.desc}</p>
+            </GlowCard>
           </FadeInLeft>
         ))}
       </div>

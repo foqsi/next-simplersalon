@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import PricingCardTemplate from './CardTemplate';
@@ -14,9 +12,8 @@ export default function PricingCard() {
         features={[
           'Custom, mobile-friendly website',
           'Admin panel to manage content',
-          'SEO optimized',
-          'Fast and secure hosting',
           'No ongoing monthly charges',
+          'Domain setup',
         ]}
         buttonText="Get Started"
         buttonLink="/otp"
@@ -24,13 +21,12 @@ export default function PricingCard() {
       <PricingCardTemplate
         title="Custom Purchase Package"
         description="Includes additional support"
-        price="Contact"
+        price="$400+"
         features={[
           'Everything in One-Time Purchase',
           'Appointment confirmation automation',
-          'Priority support',
-          'Custom domain setup',
-          'Advanced SEO reports',
+          'SEO Optimization',
+          'Additional customization'
         ]}
         buttonText="Talk to Us"
         buttonLink="/cpp"
