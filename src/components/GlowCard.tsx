@@ -43,10 +43,13 @@ export default function GlowCard({
   return (
     <div
       ref={cardRef}
-      style={{
-        ...(glowColor ? { ['--glow-color' as any]: glowColor } : {}),
-        ...(glowColorStrong ? { ['--glow-color-strong' as any]: glowColorStrong } : {})
-      }}
+      style={
+        {
+          ...(glowColor && { '--glow-color': glowColor }),
+          ...(glowColorStrong && { '--glow-color-strong': glowColorStrong }),
+        } as React.CSSProperties
+      }
+
       className={`card relative rounded-lg w-full overflow-hidden bg-gray-700
     border-2 shadow-xl transition-transform duration-300 ease-in-out 
     hover:shadow-2xl ${className}`}
