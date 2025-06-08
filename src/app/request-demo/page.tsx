@@ -36,10 +36,13 @@ export default function RequestDemoPage() {
       );
       console.log('Email sent:', result);
       setSubmitted(true);
-    } catch (error: any) {
-      console.error('EmailJS error:', error?.text || error);
+    } catch (error: unknown) {
+      if (typeof error === 'object' && error !== null && 'text' in error) {
+        console.error('EmailJS error:', (error as { text?: string }).text);
+      } else {
+        console.error('EmailJS error:', error);
+      }
     }
-
   };
 
   return (
