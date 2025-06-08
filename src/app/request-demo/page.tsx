@@ -7,8 +7,7 @@ import ParticlesBackground from '@/components/ParticlesBackground';
 import RequestDemoHero from './RequestDemoHero';
 import RequestDemoFormSection from './RequestDemoFormSection';
 import RequestDemoThankYou from './RequestDemoThankYou';
-
-export const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+import { capitalize } from '@/utils/capitalize';
 
 export default function RequestDemoPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
