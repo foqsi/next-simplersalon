@@ -1,11 +1,14 @@
 // src/app/request-demo/page.tsx
 'use client';
-
+import { SERVICE_ID, PUBLIC_KEY, TEMPLATE_AUTO_REPLY } from '@/lib/constants';
+import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import RequestDemoHero from './RequestDemoHero';
 import RequestDemoFormSection from './RequestDemoFormSection';
 import RequestDemoThankYou from './RequestDemoThankYou';
+
+export const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 
 export default function RequestDemoPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -15,9 +18,28 @@ export default function RequestDemoPage() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    const submission = {
+      name: capitalize(form.name),
+      email: form.email.trim(),
+      message: form.message.trim(),
+    };
+
+    try {
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_AUTO_REPLY,
+        submission,
+        PUBLIC_KEY
+      );
+      console.log('Email sent:', result);
+      setSubmitted(true);
+    } catch (error: any) {
+      console.error('EmailJS error:', error?.text || error);
+    }
+
   };
 
   return (
