@@ -21,7 +21,7 @@ export default function PricingCardTemplate({
   buttonLink,
 }: Props) {
   return (
-    <GlowCard className='text-center mx-auto hover:scale-105 max-w-[420px]'>
+    <GlowCard className='text-center hover:scale-105 max-w-[420px]'>
       <div>
         <h2 className="text-2xl font-bold mb-2 text-blue-400">{title}</h2>
         <p className="text-gray-300 mb-4">{description}</p>

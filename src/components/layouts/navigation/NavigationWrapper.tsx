@@ -32,9 +32,17 @@ export default function NavigationWrapper() {
           </span>
         </Link>
 
-        {/* Centered Desktop Navigation */}
-        <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl">
+        {/* Centered Navigation and Button */}
+        <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-6 items-center">
           <DesktopNavigation />
+          <a
+            href="https://demo.simplersalon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow transition"
+          >
+            View Demo
+          </a>
         </div>
 
         {/* Mobile Menu */}
@@ -43,6 +51,5 @@ export default function NavigationWrapper() {
         </div>
       </div>
     </header>
-
   );
 }

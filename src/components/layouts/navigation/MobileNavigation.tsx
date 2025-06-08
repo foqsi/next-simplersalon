@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { NavLinks, RequestDemo } from '@/components/NavLinks';
 import { Menu, X } from 'lucide-react';
+import ViewDemo from '@/components/ViewDemoButton';
 
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,8 +27,8 @@ export default function MobileNavigation() {
   }, [isOpen]);
 
   return (
-    <div className="md:hidden relative">
-      {/* Menu toggle button */}
+    <div className="md:hidden relative flex items-center gap-2">
+      <ViewDemo />
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? 'Close menu' : 'Open menu'}

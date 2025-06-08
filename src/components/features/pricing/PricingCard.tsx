@@ -4,7 +4,7 @@ import PricingCardTemplate from './CardTemplate';
 
 export default function PricingCard() {
   return (
-    <section className="pt-4 pb-16 px-4 bg-gradient-to-b from-gray-800 to-blue-950 text-white flex flex-col md:flex-row justify-center gap-8">
+    <section className="pt-4 pb-16 px-4 bg-gradient-to-b from-gray-800 to-blue-950 text-white flex flex-col md:flex-row justify-center items-center gap-8">
       <PricingCardTemplate
         title="One-Time Purchase"
         description="Everything you need for one flat price."

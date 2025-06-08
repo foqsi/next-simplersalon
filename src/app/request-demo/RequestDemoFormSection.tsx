@@ -23,9 +23,10 @@ export default function RequestDemoFormSection({ form, onChange, onSubmit }: Pro
           <h3 className="text-xl font-bold mb-4">Experience a <strong>LIVE</strong> demo!</h3>
           <p className='text-sm mb-4'>Use a custom user interface to:</p>
           <ul className="list-disc list-inside text-sm text-gray-300 space-y-2">
+            <li>Check out a simple admin dashboard</li>
             <li>Edit content on pages</li>
             <li>Upload/delete images to a gallery</li>
-            <li>Add, remove, edit content on services page</li>
+            <li>More upon request</li>
           </ul>
         </div>
       </FadeIn>
