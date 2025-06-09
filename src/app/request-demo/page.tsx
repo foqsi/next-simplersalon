@@ -1,6 +1,6 @@
 // src/app/request-demo/page.tsx
 'use client';
-import { SERVICE_ID, PUBLIC_KEY, TEMPLATE_AUTO_REPLY } from '@/lib/constants';
+import { SERVICE_ID, PUBLIC_KEY, TEMPLATE_AUTO_REPLY, MSG_PUBLIC_KEY, MSG_SERVICE_ID, MSG_TEMPLATE_SUBMIT } from '@/lib/constants';
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import ParticlesBackground from '@/components/ParticlesBackground';
@@ -27,13 +27,19 @@ export default function RequestDemoPage() {
     };
 
     try {
-      const result = await emailjs.send(
+      const message = await emailjs.send(
+        MSG_SERVICE_ID,
+        MSG_TEMPLATE_SUBMIT,
+        submission,
+        MSG_PUBLIC_KEY
+      )
+      const reply = await emailjs.send(
         SERVICE_ID,
         TEMPLATE_AUTO_REPLY,
         submission,
         PUBLIC_KEY
       );
-      console.log('Email sent:', result);
+      console.log('Email sent:', reply, message);
       setSubmitted(true);
     } catch (error: unknown) {
       if (typeof error === 'object' && error !== null && 'text' in error) {
