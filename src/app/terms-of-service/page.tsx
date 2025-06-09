@@ -18,7 +18,7 @@ export default function TermsAndServicesPage() {
         <div>
           <h2 className="text-xl font-semibold text-blue-400">2. One-Time Fee</h2>
           <p>
-            All listed packages come with a single, upfront cost. Once paid, you won’t owe any monthly or recurring
+            All listed packages come with a single, upfront cost. Once paid, you won&apos;t owe any monthly or recurring
             fees for maintaining your website through Simpler Salon.
           </p>
           <p className="mt-2">
@@ -52,7 +52,7 @@ export default function TermsAndServicesPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-blue-400">5. What's Included</h2>
+          <h2 className="text-xl font-semibold text-blue-400">5. What&apos;s Included</h2>
           <ul className="list-disc list-inside ml-4">
             <li>Mobile-optimized, responsive website</li>
             <li>Admin dashboard for easy updates</li>
