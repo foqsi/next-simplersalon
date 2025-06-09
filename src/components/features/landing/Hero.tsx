@@ -16,11 +16,13 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-slide-up text-gradient bg-gradient-to-r from-white via-white to-blue-500 bg-clip-text text-transparent">
-          Own Your Salon Website—No Monthly Fees
+          Own Your Website—No Monthly Fees
         </h1>
         <p className="max-w-xl mx-auto text-lg text-gray-200 animate-fade-in">
           One-time payment. Full ownership. Simply update your content whenever you want.
         </p>
+        <p className='text-xl text-white animate-fade-in'>Do you own a small business?</p>
+        <p className='text-2xl text-blue-500 animate-fade-in'>Save $600 every year!</p>
         <div className="mt-8 flex justify-center animate-slide-up">
           <a
             href="/pricing"

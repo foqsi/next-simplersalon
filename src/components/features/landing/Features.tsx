@@ -9,7 +9,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gradient bg-gradient-to-r from-gray-300 to-blue-500 bg-clip-text text-transparent">Why Choose Simpler Salon?</h2>
         <p className="text-gray-200 mt-4 max-w-2xl mx-auto animate-fade-in">
-          We offer everything small businesses need to own and manage a modern, professional website without ongoing fees.
+          We offer everything a salon or <span className='text-xl font-bold'>small business</span> needs to own and manage a modern, professional website without ongoing fees.
         </p>
       </div>
 

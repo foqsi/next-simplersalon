@@ -13,6 +13,10 @@ const faqs = [
     q: 'Do I need to know how to code?',
     a: 'No coding needed. Everything is built to be easy to use.',
   },
+  {
+    q: 'What about the domain fees?',
+    a: 'You are responsible for the domain fee, which is usually $10 USD per year.'
+  }
 ];
 
 export default function FAQ() {

@@ -72,7 +72,7 @@ export function AuthLinks({ onClick }: { onClick?: () => void }) {
 export function LegalLinks({ onClick }: { onClick?: () => void }) {
   return (
     <>
-      <li><Link href="/privacy-policy" className={linkClass} onClick={onClick}>Privacy Policy</Link></li>
+      {/* <li><Link href="/privacy-policy" className={linkClass} onClick={onClick}>Privacy Policy</Link></li> */}
       <li><Link href="/terms-of-service" className={linkClass} onClick={onClick}>Terms of Service</Link></li>
       {/* <Link href="/cookie-policy" className={linkClass} onClick={onClick}>Cookie Policy</Link> */}
     </>

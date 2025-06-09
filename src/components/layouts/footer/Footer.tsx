@@ -1,7 +1,7 @@
 'use client';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { QuickLinks, RequestDemo, ViewDemo } from '@/components/NavLinks';
+import { QuickLinks, RequestDemo, ViewDemo, LegalLinks } from '@/components/NavLinks';
 import Logo from '@/components/Logo';
 
 export default function Footer() {
@@ -31,12 +31,11 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Legal */}
         <div>
-          {/* <h3 className="text-xl font-semibold mb-4 text-blue-300">Legal</h3>
+          <h3 className="text-xl font-semibold mb-4 text-blue-300">Legal</h3>
           <ul className='space-y-2 text-gray-300 text-sm flex flex-col'>
             <LegalLinks />
-          </ul> */}
+          </ul>
         </div>
       </div>
 

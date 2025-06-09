@@ -26,7 +26,7 @@ export default function Comparison() {
               glowColor="rgba(239, 68, 68)">
               <h4 className="text-xl font-semibold mb-2 text-red-400">Monthly Site Builders</h4>
               <ul className="text-sm space-y-1 text-red-100">
-                <li>✘ Monthly fees forever</li>
+                <li>✘ Monthly fees forever </li>
                 <li>✘ Generic templates</li>
                 <li>✘ Limited ownership</li>
                 <li>✘ Hidden upgrade costs</li>
