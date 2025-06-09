@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'Simpler Salon',
     images: [
       {
-        url: 'https://simplersalon.com/og-image.png',
+        url: 'https://simplersalon.com/title.png',
         width: 1200,
         height: 630,
         alt: 'Simpler Salon website preview',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Simpler Salon',
     description: 'A beautiful salon website you own—no subscriptions required.',
-    images: ['https://simplersalon.com/og-image.png'],
+    images: ['https://simplersalon.com/title.png'],
   },
   metadataBase: new URL('https://simplersalon.com'),
 };
