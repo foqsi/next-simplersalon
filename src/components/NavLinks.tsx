@@ -31,7 +31,15 @@ export function QuickLinks({ onClick }: { onClick?: () => void }) {
 export function RequestDemo({ onClick }: { onClick?: () => void }) {
   return (
     <>
-      <Link href="/request-demo" className={linkClass} onClick={onClick}>Request Demo</Link>
+      <li><Link href="/request-demo" className={linkClass} onClick={onClick}>Request Demo</Link></li>
+    </>
+  )
+}
+
+export function ViewDemo({ onClick }: { onClick?: () => void }) {
+  return (
+    <>
+      <li><Link href="https://www.demo.simplersalon.com" target="_blank" className={linkClass} onClick={onClick}>View Demo</Link></li>
     </>
   )
 }

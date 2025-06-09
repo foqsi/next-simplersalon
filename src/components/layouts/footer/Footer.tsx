@@ -1,7 +1,7 @@
 'use client';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { AddtlLinks, QuickLinks } from '@/components/NavLinks';
+import { QuickLinks, RequestDemo, ViewDemo } from '@/components/NavLinks';
 import Logo from '@/components/Logo';
 
 export default function Footer() {
@@ -26,7 +26,8 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4 text-blue-300">Quick Links</h3>
           <ul className="space-y-2 text-gray-300 text-sm flex flex-col">
             <QuickLinks />
-            <AddtlLinks />
+            <ViewDemo />
+            <RequestDemo />
           </ul>
         </div>
 
