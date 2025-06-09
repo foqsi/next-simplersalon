@@ -1,13 +1,14 @@
 'use client';
 
-import GlowCard from '@/components/GlowCard';
 import Link from 'next/link';
+import GlowCard from '@/components/GlowCard';
 
 interface Props {
   title: string;
   description: string;
   price: string;
-  features: string[];
+  allFeatures: string[];
+  includedFeatures: string[];
   buttonText: string;
   buttonLink: string;
 }
@@ -16,26 +17,38 @@ export default function PricingCardTemplate({
   title,
   description,
   price,
-  features,
+  allFeatures,
+  includedFeatures,
   buttonText,
   buttonLink,
 }: Props) {
   return (
-    <GlowCard className='text-center hover:scale-105 max-w-[420px]'>
+    <GlowCard className="flex flex-col justify-between h-full w-full max-w-md p-6 text-white text-left"
+      glowColorStrong="rgba(1, 1, 1)">
       <div>
-        <h2 className="text-2xl font-bold mb-2 text-blue-400">{title}</h2>
+        <h2 className="text-2xl font-bold text-blue-400 mb-1">{title}</h2>
         <p className="text-gray-300 mb-4">{description}</p>
         <div className="text-5xl font-extrabold text-blue-400 mb-6">{price}</div>
-        <ul className="text-sm text-gray-200 space-y-2 text-left mx-auto max-w-[250px]">
-          {features.map((feature, index) => (
-            <li key={index}>✓ {feature}</li>
-          ))}
+
+        <ul className="text-sm text-gray-200 space-y-3">
+          {allFeatures.map((feature, index) => {
+            const included = includedFeatures.includes(feature);
+            return (
+              <li key={index} className="flex items-start gap-2">
+                <span className={included ? 'text-green-400' : 'text-red-500'}>
+                  {included ? '✓' : '✕'}
+                </span>
+                <span className={included ? '' : 'opacity-50 line-through'}>{feature}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
-      <div className="mt-8">
+
+      <div className="mt-10">
         <Link
           href={buttonLink}
-          className="inline-block bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition font-medium"
+          className="inline-block w-full text-center bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition font-semibold"
         >
           {buttonText}
         </Link>

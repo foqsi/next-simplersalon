@@ -12,7 +12,7 @@ export function NavLinks({ onClick }: { onClick?: () => void }) {
   return (
     <>
       <Link href="/" className={linkClass} onClick={onClick}>Home</Link>
-      <Link href="/product" className={linkClass} onClick={onClick}>Product</Link>
+      {/* <Link href="/product" className={linkClass} onClick={onClick}>Product</Link> */}
       <Link href="/pricing" className={linkClass} onClick={onClick}>Pricing</Link>
     </>
   )
@@ -22,7 +22,7 @@ export function QuickLinks({ onClick }: { onClick?: () => void }) {
   return (
     <>
       <li><Link href="/" className={linkClass} onClick={onClick}>Home</Link></li>
-      <li><Link href="/product" className={linkClass} onClick={onClick}>Product</Link></li>
+      {/* <li><Link href="/product" className={linkClass} onClick={onClick}>Product</Link></li> */}
       <li><Link href="/pricing" className={linkClass} onClick={onClick}>Pricing</Link></li>
     </>
   )

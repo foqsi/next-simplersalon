@@ -26,8 +26,8 @@ const features = [
     title: 'Ongoing Expertise',
     items: [
       'Direct support from a developer - No middleman or AI.',
-      'Scalable, modern tech stack',
-      'Quick updates or feature add-ons when needed (may be extra costs)',
+      'Scalable, modern tech stack.',
+      'Quick updates or feature add-ons when needed.',
     ],
     image: '/support.png',
   },
@@ -35,7 +35,7 @@ const features = [
 
 export default function OtherFeatures() {
   return (
-    <section className="border-t border-gray-800 bg-gradient-to-bl from-gray-950 via-gray-950 to-gray-900 text-white py-20 px-6">
+    <section className="border-t border-gray-800 bg-gradient-to-bl from-gray-800 via-gray-800 to-gray-700 text-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <FadeIn>
