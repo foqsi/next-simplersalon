@@ -28,6 +28,14 @@ export function QuickLinks({ onClick }: { onClick?: () => void }) {
   )
 }
 
+export function RequestDemoNav({ onClick }: { onClick?: () => void }) {
+  return (
+    <>
+      <Link href="/request-demo" className={linkClass} onClick={onClick}>Request Demo</Link>
+    </>
+  )
+}
+
 export function RequestDemo({ onClick }: { onClick?: () => void }) {
   return (
     <>
