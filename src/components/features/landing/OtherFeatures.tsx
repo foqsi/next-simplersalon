@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { FadeIn } from '@/components/animations';
-import GlowCard from '@/components/GlowCard';
 
 const features = [
   {
