@@ -6,31 +6,31 @@ import GlowCard from '@/components/GlowCard';
 
 const features = [
   {
-    title: 'Hosting & Performance',
+    title: 'Free Consultation',
     items: [
-      'Fast, secure hosting included',
-      'Performance-optimized sites',
-      'SEO & accessibility ready',
+      `Honest feedback - if my service isn't the right fit, I'll tell you.`,
+      'Websites built with performance and SEO in mind.',
+      'No-pressure planning tailored to your goals.',
     ],
-    image: '/images/performance.png',
+    image: '/oneonone.png',
   },
   {
     title: 'Backend Support',
     items: [
-      'Database integration for services or appointments',
-      'Contact forms + email notifications',
-      'Custom API or third-party integrations',
+      'Database integration for services or appointments.',
+      'Contact forms + email alerts.',
+      'Custom API or third-party integrations tailored to your needs.',
     ],
-    image: '/images/database.png',
+    image: '/api.png',
   },
   {
     title: 'Ongoing Expertise',
     items: [
-      'Direct support from a developer (not a chatbot)',
+      'Direct support from a developer - No middleman or AI.',
       'Scalable, modern tech stack',
-      'Quick updates or feature add-ons when needed',
+      'Quick updates or feature add-ons when needed (may be extra costs)',
     ],
-    image: '/images/support.png',
+    image: '/support.png',
   },
 ];
 
@@ -49,34 +49,36 @@ export default function OtherFeatures() {
 
         <div className="space-y-16">
           {features.map((group, i) => (
-            <FadeIn key={i} delay={i * 0.2}>
-              <GlowCard>
-                <div className="grid md:grid-cols-2 gap-8 items-center rounded-xl">
-                  {/* Text Content */}
-                  <div>
-                    <h3 className="text-xl font-bold text-blue-500 mb-4">{group.title}</h3>
-                    <ul className="space-y-2 text-sm text-gray-300 list-disc list-inside">
-                      {group.items.map((item, j) => (
-                        <li key={j}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
+            <div
+              key={i}
+              className={`flex flex-col-reverse md:flex-row ${i % 2 === 1 ? 'md:flex-row-reverse' : ''
+                } items-center gap-10 md:gap-16 py-12`}
+            >
+              {/* Text Content */}
+              <div className="md:w-1/2">
+                <h3 className="text-2xl font-bold text-blue-500 mb-4">{group.title}</h3>
+                <ul className="space-y-2 text-base text-gray-200">
+                  {group.items.map((item, j) => (
+                    <li key={j} className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">✔</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-                  {/* Optional Image */}
-                  {group.image && (
-                    <div className="relative w-full h-48 md:h-64">
-                      <Image
-                        src={group.image}
-                        alt={group.title}
-                        fill
-                        className="object-contain rounded-md"
-                      />
-                    </div>
-                  )}
-                </div>
-              </GlowCard>
-            </FadeIn>
+              {/* Image */}
+              <div className="relative w-full max-w-[300px] aspect-square">
+                <Image
+                  src={group.image}
+                  alt={group.title}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
           ))}
+
         </div>
       </div>
     </section>
